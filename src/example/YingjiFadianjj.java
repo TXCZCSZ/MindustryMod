@@ -20,8 +20,7 @@ public class YingjiFadianjj extends ConsumeGenerator {
                 float m = filterLiquid.efficiencyMultiplier(this);
                 if(m > 0) efficiencyMultiplier = m;
             }
-        }
-        if(power.graph.getBatteryStored() / power.graph.getTotalBatteryCapacity()<= 0.1f){
+            if(power.graph.getBatteryStored() / power.graph.getTotalBatteryCapacity()<= 0.1f){
             isWorking=true;
         }
         if(!isWorking){
@@ -30,5 +29,7 @@ public class YingjiFadianjj extends ConsumeGenerator {
         else{
             efficiencyMultiplier=1f;
         }
+        }
+        
 	}
 }
