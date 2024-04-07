@@ -2,7 +2,7 @@ package example.content;
 
 import example.world.blocks.power.*;
 import mindustry.content.Items;
-import mindustry.world.block;
+import mindustry.world.Block;
 import mindustry.world.blocks.power.PowerNode;
 public class Blocks {
     public static Block 
