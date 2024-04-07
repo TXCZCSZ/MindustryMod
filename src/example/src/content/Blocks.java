@@ -9,7 +9,7 @@ import mindustry.mod.*;
 import mindustry.world.blocks.power.ConsumeGenerator;
 import mindustry.world.meta.*;
 import mindustry.world.blocks.power.PowerNode;
-import modernwarfare.content.MWItems;
+import mindustry.content.Items;
 
 import static mindustry.content.Fx.generatespark;
 import static mindustry.gen.Sounds.smelter;
@@ -20,7 +20,7 @@ public class Blocks {
     public static ConsumeGenerator
     yingjiFadianjj;
     public static void load(){
-        YingjiFadianjj = new ConsumeGenerator("YingjiFadianjj"){{
+        yingjiFadianjj = new ConsumeGenerator("YingjiFadianjj"){{
             size=2;//大小
             health=1600;//生命
         }};

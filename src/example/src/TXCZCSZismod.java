@@ -5,8 +5,7 @@ import arc.util.*;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
-import modernwarfare.content.*;
-import modernwarfare.environment.MWflot;
+import mindustry.content.*;
 
 public class TXCZCSZismod extends Mod{
 
@@ -35,5 +34,5 @@ public class TXCZCSZismod extends Mod{
             super.loadContent();
             Log.info("Loading some ModernWarfareMod content.");
             Blocks.load();
-        }
+    }
 }
