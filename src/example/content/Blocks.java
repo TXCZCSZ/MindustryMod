@@ -11,9 +11,6 @@ public class Blocks {
     yingjiFadianjj;
     public static void load(){
         yingjiFadianjj = new YingjiFadianjj("应急发电机"){{
-            requirements(Category.power, with(Items.copper, 1, Items.lead, 3));
-            maxNodes = 10;
-            laserRange = 6;
         }};
     }
 }
