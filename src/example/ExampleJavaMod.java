@@ -30,6 +30,7 @@ public class ExampleJavaMod extends Mod{
 
     @Override
     public void loadContent(){
+        YingjiFadianjj.load()
         Log.info("Loading some example content.");
     }
 
