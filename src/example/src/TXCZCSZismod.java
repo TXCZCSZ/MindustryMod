@@ -11,7 +11,6 @@ import modernwarfare.environment.MWflot;
 public class TXCZCSZismod extends Mod{
 
     public TXCZCSZismod(){
-		
         Log.info("Loaded ExampleJavaMod constructor.");
 
         //listen for game load event
@@ -27,6 +26,9 @@ public class TXCZCSZismod extends Mod{
             });
         });
     }
+		
+        
+    
 
     @Override
     public void loadContent(){
@@ -34,6 +36,4 @@ public class TXCZCSZismod extends Mod{
             Log.info("Loading some ModernWarfareMod content.");
             Blocks.load();
         }
-    }
-
 }
