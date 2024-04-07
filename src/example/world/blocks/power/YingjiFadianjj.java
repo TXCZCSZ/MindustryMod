@@ -1,4 +1,4 @@
-package AlloyCentury.world.blocks.power;
+package example.world.blocks.power;
 import mindustry.world.blocks.power.*;
 
 public class YingjiFadianjj extends ConsumeGenerator {
