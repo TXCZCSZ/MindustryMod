@@ -1,3 +1,4 @@
+package mindustry.content;
 import mindustry.content.Blocks;
 import mindustry.world.Block;
 public class CustomBlocks {
