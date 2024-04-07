@@ -18,11 +18,14 @@ import static mindustry.content.Items.*;
 public class TMBlocks {
     public static ConsumeGenerator
     yingjiFadianjj;
-    public static void load(){
-        yingjiFadianjj = new ConsumeGenerator("YingjiFadianjj"){{
-            size=2;//大小
-            health=1600;//生命
-        }};
+    public void load() {
+    yingjiFadianjj = new ConsumeGenerator("yingjiFadianjj") {{
+        requirements(Category.defense, BuildVisibility.shown, new ItemStack[]{});
+        health = 2500;
+        size = 2;
+        buildCostMultiplier = 2f;
+    }};
     }
+    
 }
     
