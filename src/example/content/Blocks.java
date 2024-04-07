@@ -1,6 +1,6 @@
 package example.content;
 
-import example.world.blocks.power.*
+import example.world.blocks.power.*;
 
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
