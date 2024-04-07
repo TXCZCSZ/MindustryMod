@@ -1,6 +1,7 @@
 package mindustry.content;
-import mindustry.content.Blocks;
-import mindustry.world.Block;
+import mindustry.*;
+import mindustry.world.Block.*;
+import mindustry.world.blocks.power.*;
 public class CustomBlocks {
     public static Block 
     YingjiFadianjj;
