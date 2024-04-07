@@ -2,10 +2,6 @@ package AlloyCentury.world.blocks.power;
 import mindustry.world.blocks.power.*;
 
 public class YingjiFadianjj extends ConsumeGenerator {
-	@Override
-    public void load() {
-        super.load();
-    }
 	public float destroyTime=120f;
     
 	public YingjiFadianjj(String name){
