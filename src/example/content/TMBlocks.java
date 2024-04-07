@@ -20,6 +20,7 @@ public class TMBlocks {
     yingjiFadianjj;
     public static void load() {
     yingjiFadianjj = new ConsumeGenerator("yingjiFadianjj") {{
+        requirements(Category.power, BuildVisibility.sandboxOnly, with());
         health = 2500;
         size = 2;
         buildCostMultiplier = 2f;
