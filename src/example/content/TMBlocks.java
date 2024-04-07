@@ -20,10 +20,16 @@ public class TMBlocks {
     yingjiFadianjj;
     public static void load() {
     yingjiFadianjj = new ConsumeGenerator("yingjiFadianjj") {{
-        requirements(Category.power, BuildVisibility.sandboxOnly, with());
+        requirements(Category.power, BuildVisibility.shown, with(Item.Copper,5,Item.lead,20));
         health = 2500;
         size = 2;
         buildCostMultiplier = 2f;
+        itemCapacity = 30;
+        powerProduction = 75f;
+        consumeItem(Item.Sand,5);
+        hasItems=true;
+        
+        
         }};
     }
     

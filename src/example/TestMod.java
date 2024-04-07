@@ -20,7 +20,7 @@ public class TestMod extends Mod{
                 BaseDialog dialog = new BaseDialog("TXCZCSZ");
                 dialog.cont.add("我的第一个模组").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
-                dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("Test-mod-frog")).pad(20f).row();
                 dialog.cont.button("好哎⸜₍๑•⌔•๑₎⸝", dialog::hide).size(200f, 50f);
                 dialog.show();
             });
