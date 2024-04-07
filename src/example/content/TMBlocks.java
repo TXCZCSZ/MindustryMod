@@ -18,7 +18,7 @@ import static mindustry.content.Items.*;
 public class TMBlocks {
     public static ConsumeGenerator
     yingjiFadianjj;
-    public void load() {
+    public static void load() {
     yingjiFadianjj = new ConsumeGenerator("yingjiFadianjj") {{
         health = 2500;
         size = 2;
