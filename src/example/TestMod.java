@@ -6,6 +6,7 @@ import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import mindustry.content.*;
+import example.content.*;
 
 public class TestMod extends Mod{
 
