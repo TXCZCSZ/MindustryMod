@@ -1,5 +1,8 @@
 package example.content;
-
+import mindustry.content.Items.*;
+import mindustry.content.Items;
+import mindustry.type.Category;
+import mindustry.type.ItemStack;
 
 public class TMItems{
     public static Item dollar;
