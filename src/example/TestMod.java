@@ -34,10 +34,7 @@ public class TestMod extends Mod{
     public void loadContent(){
             super.loadContent();
             Log.info("Loading some ModernWarfareMod content.");
-          {
             TMBlocks.load();
-            
             TMItems.load();
-          }
     }
 }

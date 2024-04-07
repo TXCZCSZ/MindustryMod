@@ -20,11 +20,11 @@ public class TMBlocks {
     yingjiFadianjj;
     public void load() {
     yingjiFadianjj = new ConsumeGenerator("yingjiFadianjj") {{
-        requirements(Category.defense, BuildVisibility.shown, new ItemStack[]{});
+        requirements(BuildVisibility.shown, new ItemStack[]{});
         health = 2500;
         size = 2;
         buildCostMultiplier = 2f;
-    }};
+        }};
     }
     
 }
