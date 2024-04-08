@@ -42,11 +42,11 @@ public class TestMod extends Mod{
       Events.on(ClientLoadEvent.class, event ->{
         Core.input.addProcessor(new InputProcessor() {
           @Override
-          public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+          public void touchDown(int screenX, int screenY, int pointer, int button) {
             touchPoint.set(screenX, screenY);
           }
         }
-      }
+      });
     }
 
     public TestMod(){
