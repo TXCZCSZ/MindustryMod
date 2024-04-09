@@ -45,7 +45,7 @@ public class TestMod extends Mod{
           public void touchDown(int screenX, int screenY, int pointer, int button) {
             touchPoint.set(screenX, screenY);
           }
-        }
+        });
       });
     }
 
