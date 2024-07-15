@@ -1,5 +1,7 @@
 package example;
 
+import org.w3c.dom.Text;
+
 import arc.*;
 import arc.util.*;
 import mindustry.game.EventType.*;
@@ -8,6 +10,7 @@ import mindustry.ui.dialogs.*;
 import example.content.*;
 import arc.input.*;
 import arc.scene.ui.Button;
+import arc.scene.ui.TextButton;
 public class TestMod extends Mod{
     
 
@@ -25,7 +28,7 @@ public class TestMod extends Mod{
                 wtf.cont.button("fuck", wtf::hide).size(400f,100f);
                 wtf.show();
             });
-            Button tesButton = new Button();
+            Button tesButton = new TextButton("cilikMe");
             tesButton.fillParent=true;
             tesButton.setPosition(100, 100);
             tesButton.setSize(100,100);
