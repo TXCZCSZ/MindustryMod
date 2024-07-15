@@ -6,13 +6,24 @@ import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import example.content.*;
-
+import arc.input.*;
 public class TestMod extends Mod{
     
 
     public TestMod(){
+        GestureDetector g = new GestureDetector(null);
+        if (g.isLongPressed()) {
+            
+        }
         Log.info("Loaded ExampleJavaMod constructor.");
-
+        Events.on( WorldLoadBeginEvent.class, e ->{
+            Time.runTask(100f, () -> {
+                BaseDialog wtf = new BaseDialog("这什么寄吧逆天写法");
+                wtf.setColor(0.5f,1,1,1);
+                wtf.cont.button("fuck", wtf::hide).size(400f,100f);
+                wtf.show();
+            });
+        });
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
@@ -25,6 +36,7 @@ public class TestMod extends Mod{
                 dialog.show();
             });
         });
+        
     }
 		
         
