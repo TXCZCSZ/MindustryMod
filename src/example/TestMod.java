@@ -7,10 +7,12 @@ import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import example.content.*;
 import arc.input.*;
+import arc.scene.ui.Button;
 public class TestMod extends Mod{
     
 
     public TestMod(){
+        
         GestureDetector g = new GestureDetector(null);
         if (g.isLongPressed()) {
             
@@ -23,6 +25,17 @@ public class TestMod extends Mod{
                 wtf.cont.button("fuck", wtf::hide).size(400f,100f);
                 wtf.show();
             });
+            Button tesButton = new Button();
+            tesButton.fillParent=true;
+            tesButton.name="a";
+            if (tesButton.isPressed()){
+                BaseDialog a = new BaseDialog(null);
+                a.cont.add("buttonpressed").row();
+                a.show();
+                Time.runTask(100f,() -> {
+                    a.hide();
+                });
+            }
         });
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {

@@ -19,6 +19,7 @@ public class TMBlocks {
         powerProduction = 75f;
         consumeItem(Items.sand,5);
         hasItems=true;
+        drawPlaceText("你好",0,0,true);
         
         
         }};
