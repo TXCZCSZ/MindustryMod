@@ -15,7 +15,9 @@ public class TestMod extends Mod{
     
 
     public TestMod(){
-        
+        TMUI testUI = new TMUI();
+        testUI.load();
+        testUI.show()
         GestureDetector g = new GestureDetector(null);
         if (g.isLongPressed()) {
             
@@ -67,6 +69,7 @@ public class TestMod extends Mod{
             Log.info("Loading some ModernWarfareMod content.");
             TMBlocks.load();
             TMItems.load();
+            
     }
     
    
