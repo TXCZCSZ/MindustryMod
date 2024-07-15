@@ -15,13 +15,9 @@ public class TestMod extends Mod{
     
 
     public TestMod(){
-        TMUI testUI = new TMUI();
-        testUI.load();
         
-        GestureDetector g = new GestureDetector(null);
-        if (g.isLongPressed()) {
-            
-        }
+        
+
         Log.info("Loaded ExampleJavaMod constructor.");
         Events.on( WorldLoadBeginEvent.class, e ->{
             Time.runTask(100f, () -> {
@@ -29,22 +25,11 @@ public class TestMod extends Mod{
                 wtf.setColor(0.5f,1,1,1);
                 wtf.cont.button("fuck", wtf::hide).size(400f,100f);
                 wtf.show();
+                TMUI testUI = new TMUI();
+                testUI.load();
                 testUI.show();
             });
-            Button tesButton = new TextButton("cilikMe");
-            tesButton.fillParent=true;
-            tesButton.setPosition(100, 100);
-            tesButton.setSize(100,100);
             
-            tesButton.name="a";
-            if (tesButton.isPressed()){
-                BaseDialog a = new BaseDialog(null);
-                a.cont.add("buttonpressed").row();
-                a.show();
-                Time.runTask(100f,() -> {
-                    a.hide();
-                });
-            }
         });
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
