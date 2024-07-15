@@ -27,6 +27,9 @@ public class TestMod extends Mod{
             });
             Button tesButton = new Button();
             tesButton.fillParent=true;
+            tesButton.setPosition(100, 100);
+            tesButton.setSize(100,100);
+            
             tesButton.name="a";
             if (tesButton.isPressed()){
                 BaseDialog a = new BaseDialog(null);
