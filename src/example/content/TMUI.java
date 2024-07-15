@@ -8,8 +8,8 @@ import mindustry.ui.dialogs.BaseDialog;
 
 public class TMUI extends Dialog{
     public  void load(){
-        buttons.button("Test", (Runnable) new BaseDialog("test"){
-            
-        }.show());
+        BaseDialog a = new BaseDialog("test");
+        a.cont.button("back", a::hide).size(100,100);
+        buttons.button("Test", a::show).size(200,200);
     }
 }
