@@ -7,7 +7,9 @@ import example.TestMod;
 import mindustry.ui.dialogs.BaseDialog;
 
 public class TMUI extends Dialog{
+    
     public  void load(){
+        setModal(false);
         setBackground(null);
         setFillParent(false);
         setRotation(45);
