@@ -17,7 +17,7 @@ public class TestMod extends Mod{
     public TestMod(){
         TMUI testUI = new TMUI();
         testUI.load();
-        testUI.show();
+        
         GestureDetector g = new GestureDetector(null);
         if (g.isLongPressed()) {
             
@@ -29,6 +29,7 @@ public class TestMod extends Mod{
                 wtf.setColor(0.5f,1,1,1);
                 wtf.cont.button("fuck", wtf::hide).size(400f,100f);
                 wtf.show();
+                testUI.show();
             });
             Button tesButton = new TextButton("cilikMe");
             tesButton.fillParent=true;
