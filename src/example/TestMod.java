@@ -17,7 +17,7 @@ public class TestMod extends Mod{
     public TestMod(){
         TMUI testUI = new TMUI();
         testUI.load();
-        testUI.show()
+        testUI.show();
         GestureDetector g = new GestureDetector(null);
         if (g.isLongPressed()) {
             
