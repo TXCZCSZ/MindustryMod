@@ -5,49 +5,10 @@ import arc.util.*;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
-import mindustry.content.*;
 import example.content.*;
 
-import arc.graphics.g2d.*;
-import arc.input.GestureDetector.*;
-import arc.input.*;
-import arc.math.*;
-import arc.math.geom.*;
-import arc.scene.*;
-import arc.scene.ui.ImageButton.*;
-import arc.scene.ui.layout.*;
-import arc.struct.*;
-import arc.util.*;
-import mindustry.*;
-import mindustry.core.*;
-import mindustry.entities.*;
-import mindustry.entities.units.*;
-import mindustry.game.EventType.*;
-import mindustry.game.*;
-import mindustry.gen.*;
-import mindustry.graphics.*;
-import mindustry.type.*;
-import mindustry.ui.*;
-import mindustry.world.*;
-import mindustry.world.blocks.*;
-
-import static arc.Core.*;
-import static mindustry.Vars.*;
-import static mindustry.input.PlaceMode.*;
-
 public class TestMod extends Mod{
-    private Vec2 touchPoint = new Vec2();
-    @Override
-    public void init() {
-      Events.on(ClientLoadEvent.class, event ->{
-        Core.input.addProcessor(new InputProcessor() {
-          @Override
-          public void touchDown(int screenX, int screenY, int pointer, int button) {
-            touchPoint.set(screenX, screenY);
-          }
-        });
-      });
-    }
+    
 
     public TestMod(){
         Log.info("Loaded ExampleJavaMod constructor.");
@@ -77,12 +38,6 @@ public class TestMod extends Mod{
             TMItems.load();
     }
     
-    @Override
-    public void update() {
-      Draw.color(Color.red); 
-      Draw.alpha(0.5f); 
-      Fill.circle(touchPoint.x, touchPoint.y, 10);
-    }
-    
+   
 
 }
